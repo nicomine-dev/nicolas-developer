@@ -1,11 +1,286 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <title>Nicolas - Developer / System Analyst</title>
+  </head>
+  <body>
 
-</body>
+    <!-- NAV -->
+    <nav class="nav-bar">
+      <a href="#home" class="nav-logo">
+        <img src="images/logo.png" alt="Logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#tech">Tecnologías</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    <div class="nav-mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#home" class="mobile-link">Inicio</a></li>
+        <li><a href="#about" class="mobile-link">Sobre mí</a></li>
+        <li><a href="#projects" class="mobile-link">Proyectos</a></li>
+        <li><a href="#tech" class="mobile-link">Tecnologías</a></li>
+        <li><a href="#contact" class="mobile-link">Contacto</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        mobileMenu.classList.toggle('open');
+      });
+
+      document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('open');
+          mobileMenu.classList.remove('open');
+        });
+      });
+    </script>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="hero-badge">Disponible para trabajar</span>
+        <h1 class="hero-title">
+          Desarrollador <span class="accent">Front-end</span><br />
+          Analista en Sistemas
+        </h1>
+        <p class="hero-subtitle">
+          Analista en Sistemas y desarrollador Front-End dispuesto a brindar valor
+          a tu equipo de trabajo.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="images/Nicolas E. Mine - Analista en Sistemas - Front End Developer Cv.pdf"
+            download="Nicolás E. Miné - Analista en Sistemas - Developer.pdf"
+          >
+            <button class="btn btn-primary">Descargar CV</button>
+          </a>
+          <a href="#projects">
+            <button class="btn btn-outline">
+              Ver proyectos
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/nicomine" target="_blank" class="social-link">
+            <img src="images/github.webp" alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/nicolas-e-mine/" target="_blank" class="social-link">
+            <img src="images/linked-in.webp" alt="LinkedIn" />
+          </a>
+          <a href="mailto:mine.nicolas03@gmail.com" class="social-link">
+            <img src="images/gmail.webp" alt="Gmail" />
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-wrapper">
+          <img src="images/profile-image.png" alt="Foto de perfil" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-text">
+        <span class="section-label">Quien soy</span>
+        <h2>Sobre Mí</h2>
+        <p>
+          Soy un desarrollador front-end apasionado por crear interfaces de
+          usuario intuitivas y atractivas. Con experiencia en React, TypeScript
+          y diseño UI/UX con Material UI. A la hora de trabajar en un equipo, me
+          encanta aportar dando lo mejor de mí, ayudando a mis compañeros.
+        </p>
+        <p>
+          Mi formación como Analista en Sistemas me permite entender tanto los
+          aspectos técnicos como los de negocio, brindando soluciones completas
+          que satisfacen las necesidades del usuario final y los objetivos
+          empresariales.
+        </p>
+        <div class="badges">
+          <span class="badge">1 Año Freelance</span>
+          <span class="badge">Analista en Sistemas</span>
+          <span class="badge">Analista Programador</span>
+          <span class="badge">Inglés B1</span>
+        </div>
+      </div>
+      <div class="about-image">
+        <img src="images/programmer-icon.png" alt="Programmer icon" />
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="section-header">
+        <span class="section-label">Mi trabajo</span>
+        <h2>Proyectos</h2>
+        <p>Listado de los proyectos realizados</p>
+      </div>
+      <div class="projects-grid">
+
+        <a href="https://eco-moves.vercel.app" target="_blank" class="project-card">
+          <div class="project-img-wrapper">
+            <img src="./images/screenshots/eco-moves.png" alt="Eco-Moves" />
+            <div class="project-overlay">
+              <span class="material-symbols-outlined">open_in_new</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Eco-Moves</h3>
+            <p>
+              Aplicación para llevar un registro del dinero, sirve para
+              organizarse y ver de manera clara nuestras cuentas y resúmenes.
+            </p>
+            <div class="tech-tags">
+              <span>React</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://pokedex-react-nu-peach.vercel.app" target="_blank" class="project-card">
+          <div class="project-img-wrapper">
+            <img src="./images/screenshots/pokedex.png" alt="Pokedex" />
+            <div class="project-overlay">
+              <span class="material-symbols-outlined">open_in_new</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Pokedex</h3>
+            <p>
+              Pokedex conectada a la PokeApi, se puede navegar por todos los
+              registros de la PokeApi. Este es mi primer trabajo realizado en React.
+            </p>
+            <div class="tech-tags">
+              <span>React</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://audio-player-self-iota.vercel.app" target="_blank" class="project-card">
+          <div class="project-img-wrapper">
+            <img src="./images/screenshots/audio-player.png" alt="Audio Player" />
+            <div class="project-overlay">
+              <span class="material-symbols-outlined">open_in_new</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Audio-Player</h3>
+            <p>Reproductor de canciones.</p>
+            <div class="tech-tags">
+              <span>React</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="tech">
+      <div class="section-header">
+        <span class="section-label">Stack</span>
+        <h2>Tecnologías y Habilidades</h2>
+      </div>
+      <ul class="skills-grid">
+        <li class="skill-item">
+          <img src="images/html.png" alt="HTML" />
+          <p>HTML</p>
+        </li>
+        <li class="skill-item">
+          <img src="images/javascript.png" alt="JavaScript" />
+          <p>JavaScript</p>
+        </li>
+        <li class="skill-item">
+          <img src="images/typescript.png" alt="TypeScript" />
+          <p>TypeScript</p>
+        </li>
+        <li class="skill-item">
+          <img src="images/mysql.webp" alt="MySQL" />
+          <p>MySQL</p>
+        </li>
+        <li class="skill-item">
+          <img src="images/react-512.webp" alt="React" />
+          <p>React</p>
+        </li>
+        <li class="skill-item">
+          <img src="images/material-ui.png" alt="Material UI" />
+          <p>Material UI</p>
+        </li>
+        <li class="skill-item">
+          <img src="images/github.webp" alt="GitHub" />
+          <p>GitHub</p>
+        </li>
+        <li class="skill-item">
+          <img src="images/teamwork.png" alt="Trabajo en equipo" />
+          <p>Trabajo en equipo</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="contact-info">
+        <span class="section-label">Hablemos</span>
+        <h2>Interesado en Trabajar Juntos?</h2>
+        <p>
+          Mis conocimientos y estudios a lo largo de la carrera me dan la
+          posibilidad de estar abierto a cualquier tipo de trabajo en el mundo
+          IT. Ya sea en la parte de desarrollo, tanto front como back; sino
+          también en partes de testing o documentación y análisis.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:mine.nicolas03@gmail.com" class="contact-link">
+            <img src="images/gmail.webp" alt="Gmail" />
+            <span>mine.nicolas03@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/nicolas-e-mine/" target="_blank" class="contact-link">
+            <img src="images/linked-in.webp" alt="LinkedIn" />
+            <span>linkedin.com/in/nicolas-e-mine/</span>
+          </a>
+          <a href="https://github.com/nicomine" target="_blank" class="contact-link">
+            <img src="images/github.webp" alt="GitHub" />
+            <span>github.com/nicomine</span>
+          </a>
+        </div>
+        <a
+          href="images/Nicolas E. Mine - Analista en Sistemas - Front End Developer Cv.pdf"
+          download="Nicolás E. Miné - Analista en Sistemas - Developer.pdf"
+        >
+          <button class="btn btn-primary">Descargar CV</button>
+        </a>
+      </div>
+      <div class="contact-image">
+        <img src="images/work-together.webp" alt="Work together" />
+      </div>
+    </section>
+
+  </body>
 </html>
