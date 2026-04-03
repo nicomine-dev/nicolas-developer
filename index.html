@@ -144,64 +144,201 @@
         <h2>Proyectos</h2>
         <p>Listado de los proyectos realizados</p>
       </div>
-      <div class="projects-grid">
 
-        <a href="https://ecomoves.vercel.app" target="_blank" class="project-card">
-          <div class="project-img-wrapper">
-            <img src="./images/screenshots/eco-moves.png" alt="Eco-Moves" />
-            <div class="project-overlay">
-              <span class="material-symbols-outlined">open_in_new</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <h3>Eco-Moves</h3>
-            <p>
-              Aplicación para llevar un registro del dinero, sirve para
-              organizarse y ver de manera clara nuestras cuentas y resúmenes.
-            </p>
-            <div class="tech-tags">
-              <span>React</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://pokedex-nm.vercel.app" target="_blank" class="project-card">
-          <div class="project-img-wrapper">
-            <img src="./images/screenshots/pokedex.png" alt="Pokedex" />
-            <div class="project-overlay">
-              <span class="material-symbols-outlined">open_in_new</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <h3>Pokedex</h3>
-            <p>
-              Pokedex conectada a la PokeApi, se puede navegar por todos los
-              registros de la PokeApi. Este es mi primer trabajo realizado en React.
-            </p>
-            <div class="tech-tags">
-              <span>React</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="https://pixel-player-nm.vercel.app" target="_blank" class="project-card">
-          <div class="project-img-wrapper">
-            <img src="./images/screenshots/audio-player.png" alt="Audio Player" />
-            <div class="project-overlay">
-              <span class="material-symbols-outlined">open_in_new</span>
-            </div>
-          </div>
-          <div class="project-info">
-            <h3>Pixel-Player</h3>
-            <p>Reproductor de canciones con estilo vaporwave y pixelart.</p>
-            <div class="tech-tags">
-              <span>React</span>
-            </div>
-          </div>
-        </a>
-
+      <div class="projects-tabs">
+        <button class="tab-btn active" data-tab="all">All</button>
+        <button class="tab-btn" data-tab="recreational">Recreational</button>
+        <button class="tab-btn" data-tab="enterprise">Enterprise</button>
       </div>
+
+      <div class="tab-panel active" id="tab-all">
+        <div class="projects-grid">
+
+          <a href="https://ecomoves.vercel.app" target="_blank" class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./images/screenshots/eco-moves.png" alt="Eco-Moves" />
+              <div class="project-overlay">
+                <span class="material-symbols-outlined">open_in_new</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Eco-Moves</h3>
+              <p>
+                Aplicación para llevar un registro del dinero, sirve para
+                organizarse y ver de manera clara nuestras cuentas y resúmenes.
+              </p>
+              <div class="tech-tags">
+                <span>React</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://beecommerce-three.vercel.app/login" target="_blank" class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./images/screenshots/beecommerce.png" alt="Beecommerce" />
+              <div class="project-overlay">
+                <span class="material-symbols-outlined">open_in_new</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Beecommerce</h3>
+              <p>
+                Aplicación para negocios de ventas con registro de stock, ventas y
+                métricas. Permite escanear productos mediante códigos de barra y QR.
+              </p>
+              <div class="tech-tags">
+                <span>React</span>
+                <span>Material UI</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://pokedex-nm.vercel.app" target="_blank" class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./images/screenshots/pokedex.png" alt="Pokedex" />
+              <div class="project-overlay">
+                <span class="material-symbols-outlined">open_in_new</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Pokedex</h3>
+              <p>
+                Pokedex conectada a la PokeApi, se puede navegar por todos los
+                registros de la PokeApi. Este es mi primer trabajo realizado en React.
+              </p>
+              <div class="tech-tags">
+                <span>React</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://pixel-player-nm.vercel.app" target="_blank" class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./images/screenshots/audio-player.png" alt="Audio Player" />
+              <div class="project-overlay">
+                <span class="material-symbols-outlined">open_in_new</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Pixel-Player</h3>
+              <p>Reproductor de canciones con estilo vaporwave y pixelart.</p>
+              <div class="tech-tags">
+                <span>React</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-recreational">
+        <div class="projects-grid">
+
+          <a href="https://ecomoves.vercel.app" target="_blank" class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./images/screenshots/eco-moves.png" alt="Eco-Moves" />
+              <div class="project-overlay">
+                <span class="material-symbols-outlined">open_in_new</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Eco-Moves</h3>
+              <p>
+                Aplicación para llevar un registro del dinero, sirve para
+                organizarse y ver de manera clara nuestras cuentas y resúmenes.
+              </p>
+              <div class="tech-tags">
+                <span>React</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://pokedex-nm.vercel.app" target="_blank" class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./images/screenshots/pokedex.png" alt="Pokedex" />
+              <div class="project-overlay">
+                <span class="material-symbols-outlined">open_in_new</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Pokedex</h3>
+              <p>
+                Pokedex conectada a la PokeApi, se puede navegar por todos los
+                registros de la PokeApi. Este es mi primer trabajo realizado en React.
+              </p>
+              <div class="tech-tags">
+                <span>React</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://pixel-player-nm.vercel.app" target="_blank" class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./images/screenshots/audio-player.png" alt="Audio Player" />
+              <div class="project-overlay">
+                <span class="material-symbols-outlined">open_in_new</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Pixel-Player</h3>
+              <p>Reproductor de canciones con estilo vaporwave y pixelart.</p>
+              <div class="tech-tags">
+                <span>React</span>
+              </div>
+            </div>
+          </a>
+
+
+        </div>
+      </div>
+
+      <div class="tab-panel" id="tab-enterprise">
+        <div class="projects-grid">
+
+          <a href="https://beecommerce-three.vercel.app/login" target="_blank" class="project-card">
+            <div class="project-img-wrapper">
+              <img src="./images/screenshots/beecommerce.png" alt="Beecommerce" />
+              <div class="project-overlay">
+                <span class="material-symbols-outlined">open_in_new</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Beecommerce</h3>
+              <p>
+                Aplicación para negocios de ventas con registro de stock, ventas y
+                métricas. Permite escanear productos mediante códigos de barra y QR.
+              </p>
+              <div class="tech-tags">
+                <span>React</span>
+                <span>Material UI</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
     </section>
+
+    <script>
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const currentPanel = document.querySelector('.tab-panel.active');
+          const nextPanel = document.getElementById('tab-' + btn.dataset.tab);
+          if (currentPanel === nextPanel) return;
+
+          document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          currentPanel.style.animation = 'tabFadeOut 0.2s ease forwards';
+          currentPanel.addEventListener('animationend', () => {
+            currentPanel.classList.remove('active');
+            currentPanel.style.animation = '';
+            nextPanel.classList.add('active');
+          }, { once: true });
+        });
+      });
+    </script>
 
     <!-- SKILLS -->
     <section class="skills" id="tech">
