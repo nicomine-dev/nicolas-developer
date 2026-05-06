@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -17,7 +17,6 @@
     <title>Nicolas - Developer / System Analyst</title>
   </head>
   <body>
-
     <!-- NAV -->
     <nav class="nav-bar">
       <a href="#home" class="nav-logo">
@@ -47,18 +46,18 @@
     </div>
 
     <script>
-      const hamburger = document.getElementById('hamburger');
-      const mobileMenu = document.getElementById('mobileMenu');
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
 
-      hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('open');
-        mobileMenu.classList.toggle('open');
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("open");
+        mobileMenu.classList.toggle("open");
       });
 
-      document.querySelectorAll('.mobile-link').forEach(link => {
-        link.addEventListener('click', () => {
-          hamburger.classList.remove('open');
-          mobileMenu.classList.remove('open');
+      document.querySelectorAll(".mobile-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("open");
+          mobileMenu.classList.remove("open");
         });
       });
     </script>
@@ -72,12 +71,12 @@
           Analista en Sistemas
         </h1>
         <p class="hero-subtitle">
-          Analista en Sistemas y desarrollador Front-End dispuesto a brindar valor
-          a tu equipo de trabajo.
+          Analista en Sistemas y desarrollador Front-End dispuesto a brindar
+          valor a tu equipo de trabajo.
         </p>
         <div class="hero-actions">
           <a
-            href="images/Nicolas E. Mine - Analista en Sistemas - Front End Developer Cv.pdf"
+            href="images/Nicolas E. Mine - Cv - Analista en Sistemas.pdf"
             download="Nicolás E. Miné - Analista en Sistemas - Developer.pdf"
           >
             <button class="btn btn-primary">Descargar CV</button>
@@ -90,10 +89,18 @@
           </a>
         </div>
         <div class="hero-socials">
-          <a href="https://github.com/nicomine" target="_blank" class="social-link">
+          <a
+            href="https://github.com/nicomine"
+            target="_blank"
+            class="social-link"
+          >
             <img src="images/github.webp" alt="GitHub" />
           </a>
-          <a href="https://www.linkedin.com/in/nicolas-e-mine/" target="_blank" class="social-link">
+          <a
+            href="https://www.linkedin.com/in/nicolas-e-mine/"
+            target="_blank"
+            class="social-link"
+          >
             <img src="images/linked-in.webp" alt="LinkedIn" />
           </a>
           <a href="mailto:mine.nicolas03@gmail.com" class="social-link">
@@ -153,8 +160,11 @@
 
       <div class="tab-panel active" id="tab-all">
         <div class="projects-grid">
-
-          <a href="https://ecomoves.vercel.app" target="_blank" class="project-card">
+          <a
+            href="https://ecomoves.vercel.app"
+            target="_blank"
+            class="project-card"
+          >
             <div class="project-img-wrapper">
               <img src="./images/screenshots/eco-moves.png" alt="Eco-Moves" />
               <div class="project-overlay">
@@ -173,9 +183,16 @@
             </div>
           </a>
 
-          <a href="https://beecommerce-three.vercel.app/login" target="_blank" class="project-card">
+          <a
+            href="https://beecommerce-three.vercel.app/login"
+            target="_blank"
+            class="project-card"
+          >
             <div class="project-img-wrapper">
-              <img src="./images/screenshots/beecommerce.png" alt="Beecommerce" />
+              <img
+                src="./images/screenshots/beecommerce.png"
+                alt="Beecommerce"
+              />
               <div class="project-overlay">
                 <span class="material-symbols-outlined">open_in_new</span>
               </div>
@@ -183,8 +200,9 @@
             <div class="project-info">
               <h3>Beecommerce</h3>
               <p>
-                Aplicación para negocios de ventas con registro de stock, ventas y
-                métricas. Permite escanear productos mediante códigos de barra y QR.
+                Aplicación para negocios de ventas con registro de stock, ventas
+                y métricas. Permite escanear productos mediante códigos de barra
+                y QR.
               </p>
               <div class="tech-tags">
                 <span>React</span>
@@ -193,7 +211,11 @@
             </div>
           </a>
 
-          <a href="https://pokedex-nm.vercel.app" target="_blank" class="project-card">
+          <a
+            href="https://pokedex-nm.vercel.app"
+            target="_blank"
+            class="project-card"
+          >
             <div class="project-img-wrapper">
               <img src="./images/screenshots/pokedex.png" alt="Pokedex" />
               <div class="project-overlay">
@@ -204,7 +226,8 @@
               <h3>Pokedex</h3>
               <p>
                 Pokedex conectada a la PokeApi, se puede navegar por todos los
-                registros de la PokeApi. Este es mi primer trabajo realizado en React.
+                registros de la PokeApi. Este es mi primer trabajo realizado en
+                React.
               </p>
               <div class="tech-tags">
                 <span>React</span>
@@ -212,9 +235,16 @@
             </div>
           </a>
 
-          <a href="https://pixel-player-nm.vercel.app" target="_blank" class="project-card">
+          <a
+            href="https://pixel-player-nm.vercel.app"
+            target="_blank"
+            class="project-card"
+          >
             <div class="project-img-wrapper">
-              <img src="./images/screenshots/audio-player.png" alt="Audio Player" />
+              <img
+                src="./images/screenshots/audio-player.png"
+                alt="Audio Player"
+              />
               <div class="project-overlay">
                 <span class="material-symbols-outlined">open_in_new</span>
               </div>
@@ -227,14 +257,16 @@
               </div>
             </div>
           </a>
-
         </div>
       </div>
 
       <div class="tab-panel" id="tab-recreational">
         <div class="projects-grid">
-
-          <a href="https://ecomoves.vercel.app" target="_blank" class="project-card">
+          <a
+            href="https://ecomoves.vercel.app"
+            target="_blank"
+            class="project-card"
+          >
             <div class="project-img-wrapper">
               <img src="./images/screenshots/eco-moves.png" alt="Eco-Moves" />
               <div class="project-overlay">
@@ -253,7 +285,11 @@
             </div>
           </a>
 
-          <a href="https://pokedex-nm.vercel.app" target="_blank" class="project-card">
+          <a
+            href="https://pokedex-nm.vercel.app"
+            target="_blank"
+            class="project-card"
+          >
             <div class="project-img-wrapper">
               <img src="./images/screenshots/pokedex.png" alt="Pokedex" />
               <div class="project-overlay">
@@ -264,7 +300,8 @@
               <h3>Pokedex</h3>
               <p>
                 Pokedex conectada a la PokeApi, se puede navegar por todos los
-                registros de la PokeApi. Este es mi primer trabajo realizado en React.
+                registros de la PokeApi. Este es mi primer trabajo realizado en
+                React.
               </p>
               <div class="tech-tags">
                 <span>React</span>
@@ -272,9 +309,16 @@
             </div>
           </a>
 
-          <a href="https://pixel-player-nm.vercel.app" target="_blank" class="project-card">
+          <a
+            href="https://pixel-player-nm.vercel.app"
+            target="_blank"
+            class="project-card"
+          >
             <div class="project-img-wrapper">
-              <img src="./images/screenshots/audio-player.png" alt="Audio Player" />
+              <img
+                src="./images/screenshots/audio-player.png"
+                alt="Audio Player"
+              />
               <div class="project-overlay">
                 <span class="material-symbols-outlined">open_in_new</span>
               </div>
@@ -287,17 +331,21 @@
               </div>
             </div>
           </a>
-
-
         </div>
       </div>
 
       <div class="tab-panel" id="tab-enterprise">
         <div class="projects-grid">
-
-          <a href="https://beecommerce-three.vercel.app/login" target="_blank" class="project-card">
+          <a
+            href="https://beecommerce-three.vercel.app/login"
+            target="_blank"
+            class="project-card"
+          >
             <div class="project-img-wrapper">
-              <img src="./images/screenshots/beecommerce.png" alt="Beecommerce" />
+              <img
+                src="./images/screenshots/beecommerce.png"
+                alt="Beecommerce"
+              />
               <div class="project-overlay">
                 <span class="material-symbols-outlined">open_in_new</span>
               </div>
@@ -305,8 +353,9 @@
             <div class="project-info">
               <h3>Beecommerce</h3>
               <p>
-                Aplicación para negocios de ventas con registro de stock, ventas y
-                métricas. Permite escanear productos mediante códigos de barra y QR.
+                Aplicación para negocios de ventas con registro de stock, ventas
+                y métricas. Permite escanear productos mediante códigos de barra
+                y QR.
               </p>
               <div class="tech-tags">
                 <span>React</span>
@@ -314,28 +363,32 @@
               </div>
             </div>
           </a>
-
         </div>
       </div>
-
     </section>
 
     <script>
-      document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-          const currentPanel = document.querySelector('.tab-panel.active');
-          const nextPanel = document.getElementById('tab-' + btn.dataset.tab);
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const currentPanel = document.querySelector(".tab-panel.active");
+          const nextPanel = document.getElementById("tab-" + btn.dataset.tab);
           if (currentPanel === nextPanel) return;
 
-          document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
+          document
+            .querySelectorAll(".tab-btn")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
 
-          currentPanel.style.animation = 'tabFadeOut 0.2s ease forwards';
-          currentPanel.addEventListener('animationend', () => {
-            currentPanel.classList.remove('active');
-            currentPanel.style.animation = '';
-            nextPanel.classList.add('active');
-          }, { once: true });
+          currentPanel.style.animation = "tabFadeOut 0.2s ease forwards";
+          currentPanel.addEventListener(
+            "animationend",
+            () => {
+              currentPanel.classList.remove("active");
+              currentPanel.style.animation = "";
+              nextPanel.classList.add("active");
+            },
+            { once: true },
+          );
         });
       });
     </script>
@@ -398,11 +451,19 @@
             <img src="images/gmail.webp" alt="Gmail" />
             <span>mine.nicolas03@gmail.com</span>
           </a>
-          <a href="https://www.linkedin.com/in/nicolas-e-mine/" target="_blank" class="contact-link">
+          <a
+            href="https://www.linkedin.com/in/nicolas-e-mine/"
+            target="_blank"
+            class="contact-link"
+          >
             <img src="images/linked-in.webp" alt="LinkedIn" />
             <span>linkedin.com/in/nicolas-e-mine/</span>
           </a>
-          <a href="https://github.com/nicomine" target="_blank" class="contact-link">
+          <a
+            href="https://github.com/nicomine"
+            target="_blank"
+            class="contact-link"
+          >
             <img src="images/github.webp" alt="GitHub" />
             <span>github.com/nicomine</span>
           </a>
@@ -418,6 +479,5 @@
         <img src="images/work-together.webp" alt="Work together" />
       </div>
     </section>
-
   </body>
 </html>
