@@ -322,8 +322,86 @@ section.vw-section {
   overflow: hidden;
 }
 @media (max-width: 720px) {
-  section.vw-section { padding: 100px 24px; }
-  .side-nav { right: 8px; }
+  section.vw-section { padding: 100px 16px; }
+
+  /* sidenav: hidden by default on mobile, only visible while scrolling */
+  .side-nav {
+    right: 6px; gap: 8px; font-size: 11px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 220ms ease;
+  }
+  .side-nav.is-scrolling {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .side-nav button { padding: 2px 0; gap: 6px; }
+  .side-nav button .dot { width: 6px; height: 6px; }
+  .side-nav button.active .dot { width: 10px; height: 10px; }
+  .side-nav button .label,
+  .side-nav button:hover .label,
+  .side-nav button.active .label {
+    opacity: 1;
+    transform: none;
+    background: rgba(10, 0, 20, 0.72);
+    padding: 2px 6px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 45, 149, 0.3);
+    letter-spacing: 0.06em;
+  }
+
+  /* shrink large display text so it never overflows the viewport */
+  .hero-name {
+    font-size: clamp(40px, 14vw, 110px);
+    letter-spacing: 0.01em;
+    text-shadow:
+      2px 2px 0 var(--purple),
+      4px 4px 0 var(--pink),
+      -2px -2px 0 var(--cyan);
+  }
+  .hero-sub {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    padding: 0 8px;
+    line-height: 1.4;
+  }
+  .hero-jp { font-size: 13px; letter-spacing: 0.25em; }
+  .hero-marquee { font-size: 13px; }
+  .scroll-hint { display: none; }
+
+  .section-title {
+    font-size: clamp(36px, 10vw, 78px);
+    letter-spacing: 0.02em;
+    margin-bottom: 28px;
+    text-shadow:
+      2px 2px 0 var(--purple),
+      4px 4px 0 var(--pink),
+      -1px -1px 0 var(--cyan);
+  }
+  .section-tag { font-size: 16px; letter-spacing: 0.15em; }
+  .section-jp { font-size: 12px; }
+
+  .contact-line {
+    font-size: clamp(36px, 11vw, 88px);
+    letter-spacing: 0.02em;
+    text-shadow:
+      2px 2px 0 var(--purple),
+      4px 4px 0 var(--cyan),
+      -1px -1px 0 var(--pink);
+  }
+  .contact-mail {
+    font-size: clamp(16px, 5vw, 32px);
+    padding: 10px 14px;
+    word-break: break-all;
+    max-width: 100%;
+  }
+  .contact-socials { gap: 12px; }
+  .contact-socials a { font-size: 16px; padding: 8px 14px; letter-spacing: 0.1em; }
+  .terminal { font-size: 12px; padding: 10px 12px; }
+
+  .top-bar { padding: 12px 14px; font-size: 14px; gap: 12px; }
+  .top-bar .stat { gap: 10px; }
 }
 
 .section-tag {
