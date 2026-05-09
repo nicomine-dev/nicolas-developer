@@ -321,7 +321,7 @@ section.vw-section {
   justify-content: center;
   overflow: hidden;
 }
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   section.vw-section { padding: 100px 16px; }
 
   /* sidenav: hidden by default on mobile, only visible while scrolling */
@@ -353,16 +353,16 @@ section.vw-section {
 
   /* shrink large display text so it never overflows the viewport */
   .hero-name {
-    font-size: clamp(40px, 14vw, 110px);
-    letter-spacing: 0.01em;
+    font-size: clamp(22px, 7vw, 56px);
+    letter-spacing: 0;
     text-shadow:
       2px 2px 0 var(--purple),
       4px 4px 0 var(--pink),
       -2px -2px 0 var(--cyan);
   }
   .hero-sub {
-    font-size: 13px;
-    letter-spacing: 0.18em;
+    font-size: 10px;
+    letter-spacing: 0.12em;
     padding: 0 8px;
     line-height: 1.4;
   }
@@ -391,9 +391,10 @@ section.vw-section {
       -1px -1px 0 var(--pink);
   }
   .contact-mail {
-    font-size: clamp(16px, 5vw, 32px);
+    font-size: clamp(11px, 3.6vw, 22px);
+    letter-spacing: 0.04em;
     padding: 10px 14px;
-    word-break: break-all;
+    white-space: nowrap;
     max-width: 100%;
   }
   .contact-socials { gap: 12px; }
@@ -618,6 +619,24 @@ section.vw-section {
   letter-spacing: 0.5em;
   color: var(--pink-soft);
   opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+  .hero-name {
+    font-size: clamp(66px, 17vw, 144px);
+    letter-spacing: 0.03em;
+    text-shadow:
+      2px 2px 0 var(--purple),
+      4px 4px 0 var(--pink),
+      -2px -2px 0 var(--cyan);
+  }
+  .hero-sub {
+    font-size: 17px;
+    letter-spacing: 0.22em;
+    margin-top: 14px;
+    padding: 0 8px;
+    line-height: 1.4;
+  }
 }
 
 .hero-marquee {
@@ -1365,6 +1384,20 @@ section.vw-section {
   .dir-cursor { animation: none; }
 }
 
+@media (max-width: 900px) {
+  .dir-titlebar { font-size: 17px; padding: 4px 7px; gap: 10px; }
+  .dir-buttons { font-size: 12px; }
+  .dir-terminal { font-size: 17px; padding: 12px 12px 0; }
+  .dir-head { font-size: 15px; letter-spacing: 0.16em; }
+  .dir-cols { grid-template-columns: 1.6fr 0.9fr 0.6fr; gap: 9px; }
+}
+
+@media (max-width: 600px) {
+  .dir-titlebar { font-size: 15px; }
+  .dir-terminal { font-size: 15px; }
+  .dir-head { font-size: 13px; letter-spacing: 0.12em; }
+  .dir-cols { gap: 7px; }
+}
 
 /* ===== CONTACT ===== */
 .contact {
