@@ -1548,6 +1548,51 @@ section.vw-section {
   animation: blink 0.9s steps(2) infinite;
 }
 
+.contact-cat {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 72px;
+  height: 54px;
+  z-index: 1;
+  image-rendering: pixelated;
+  pointer-events: none;
+  transform-origin: 50% 100%;
+  will-change: transform;
+}
+.contact-cat .frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact-cat .frame.run,
+.contact-cat .frame.pet { display: none; }
+.contact-cat:not(.running):not(.petted) .idle-a { animation: cat-frame-slow-a 0.7s steps(1) infinite; }
+.contact-cat:not(.running):not(.petted) .idle-b { animation: cat-frame-slow-b 0.7s steps(1) infinite; }
+.contact-cat.running .idle { display: none; }
+.contact-cat.running .run { display: block; }
+.contact-cat.running .run-a { animation: cat-frame-a 0.16s steps(1) infinite; }
+.contact-cat.running .run-b { animation: cat-frame-b 0.16s steps(1) infinite; }
+.contact-cat.petted { height: 96px; pointer-events: auto; cursor: pointer; }
+.contact-cat.petted .idle,
+.contact-cat.petted .run { display: none; }
+.contact-cat.petted .pet { display: block; }
+.contact-cat.petted .pet-a { animation: cat-frame-pet-a 0.32s steps(1) infinite; }
+.contact-cat.petted .pet-b { animation: cat-frame-pet-b 0.32s steps(1) infinite; }
+@keyframes cat-frame-pet-a {
+  0%, 49.9% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+@keyframes cat-frame-pet-b {
+  0%, 49.9% { opacity: 0; }
+  50%, 100% { opacity: 1; }
+}
+@media (max-width: 720px) {
+  .contact-cat { display: block; pointer-events: auto; cursor: pointer; }
+}
+
 /* ===== Footer ===== */
 .foot {
   position: relative;

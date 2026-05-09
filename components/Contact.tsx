@@ -1,9 +1,11 @@
 import type { CopyBlock } from "@/lib/copy";
+import { FooterCat } from "./FooterCat";
 
 export function Contact({ c }: { c: CopyBlock }) {
   return (
     <section id="contact" className="vw-section contact">
       <div className="contact-grid" aria-hidden="true" />
+      <FooterCat />
       <div className="contact-inner">
         <div className="section-tag">{c.contactTag}</div>
         <div className="contact-line">{c.contactLine}</div>
