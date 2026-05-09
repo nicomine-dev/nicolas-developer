@@ -225,6 +225,9 @@ export function Cursor() {
         const running = dist > 2;
         cat.current.classList.toggle("running", running);
       }
+      if (dot.current) {
+        dot.current.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
+      }
       raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);

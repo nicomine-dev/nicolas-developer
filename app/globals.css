@@ -73,7 +73,6 @@ body.custom-cursor * { cursor: none !important; }
   border-radius: 50%;
   mix-blend-mode: difference;
   transform: translate(-50%, -50%);
-  transition: transform 80ms linear;
 }
 .cursor-cat {
   position: fixed;
