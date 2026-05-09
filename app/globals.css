@@ -616,7 +616,7 @@ section.vw-section {
   font-family: var(--font-jp);
   font-size: 18px;
   letter-spacing: 0.5em;
-  color: var(--pink-soft);
+  color: var(--ink);
   opacity: 0.85;
 }
 
