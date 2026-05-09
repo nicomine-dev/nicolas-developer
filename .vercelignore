@@ -1,4 +1,6 @@
-# Legacy files preserved for reference, not part of the deploy.
-index.html
-styles.css
-images/
+# Legacy files at repo root, preserved for reference but excluded from deploy.
+# Patterns must be anchored with leading slash so /images/ does NOT match
+# /public/images/ (which holds the real assets used by the Next.js app).
+/index.html
+/styles.css
+/images/
