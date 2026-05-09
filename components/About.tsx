@@ -46,7 +46,7 @@ export function About({ c }: { c: CopyBlock }) {
                 {c.statCoffee}
               </div>
               <div className="stat">
-                <b>B1</b>
+                <b>B2</b>
                 {c.statBugs}
               </div>
             </div>

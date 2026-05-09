@@ -82,9 +82,9 @@ export const EXPERIENCE: Experience[] = [
     tags: ["ANALYSIS", "DB", "PM"],
   },
   {
-    when: "B1",
+    when: "B2",
     company: "INGLES",
-    role: { es: "Nivel intermedio", en: "Intermediate" },
+    role: { es: "Nivel alto", en: "Upper-intermediate" },
     desc: {
       es: "Comunicacion fluida en entornos tecnicos: documentacion, code review y meetings.",
       en: "Fluent in technical settings: documentation, code review and meetings.",
@@ -165,7 +165,7 @@ export const TOOLS: Tool[] = [
   { label: "STACK", value: "REACT / TS / MUI" },
   { label: "DB", value: "MYSQL" },
   { label: "TOOLS", value: "VS CODE / GITHUB" },
-  { label: "IDIOMAS", value: "ESPANOL / INGLES B1" },
+  { label: "IDIOMAS", value: "ESPANOL / INGLES B2" },
 ];
 
 export const SKILL_DIRS: SkillDir[] = [
@@ -247,7 +247,7 @@ export const SKILL_DIRS: SkillDir[] = [
     iconColor: "yellow",
     entries: [
       { icon: "◉", name: "ESPANOL", ext: ".LNG", type: { es: "HABLADO", en: "SPOKEN" }, meta: { es: "NATIVO", en: "NATIVE" } },
-      { icon: "◉", name: "INGLES",  ext: ".LNG", type: { es: "HABLADO", en: "SPOKEN" }, meta: "B1" },
+      { icon: "◉", name: "INGLES",  ext: ".LNG", type: { es: "HABLADO", en: "SPOKEN" }, meta: "B2" },
     ],
   },
 ];
