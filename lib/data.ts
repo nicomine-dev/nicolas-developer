@@ -22,6 +22,25 @@ export type Project = {
 export type Skill = { name: string; level: number };
 export type Tool = { label: string; value: string };
 
+export type SkillIconColor = "cyan-soft" | "purple" | "yellow" | "pink-soft" | "orange";
+
+export type SkillEntry = {
+  icon: string;
+  name: string;
+  ext: string;
+  type: Record<Lang, string>;
+  meta: string | Record<Lang, string>;
+};
+
+export type SkillDir = {
+  id: string;
+  pathLabel: string;
+  title: Record<Lang, string>;
+  metaHeader: Record<Lang, string>;
+  iconColor: SkillIconColor;
+  entries: SkillEntry[];
+};
+
 export const EXPERIENCE: Experience[] = [
   {
     when: "2024 — NOW",
@@ -147,4 +166,88 @@ export const TOOLS: Tool[] = [
   { label: "DB", value: "MYSQL" },
   { label: "TOOLS", value: "VS CODE / GITHUB" },
   { label: "IDIOMAS", value: "ESPANOL / INGLES B1" },
+];
+
+export const SKILL_DIRS: SkillDir[] = [
+  {
+    id: "frontend",
+    pathLabel: "C:\\STACK\\FRONTEND",
+    title: { es: "FRONTEND", en: "FRONTEND" },
+    metaHeader: { es: "AÑOS", en: "YEARS" },
+    iconColor: "cyan-soft",
+    entries: [
+      { icon: "▤", name: "REACT",      ext: ".JSX", type: { es: "FRAMEWORK", en: "FRAMEWORK" }, meta: "3" },
+      { icon: "▤", name: "TYPESCRIPT", ext: ".TS",  type: { es: "LENGUAJE",  en: "LANGUAGE"  }, meta: "2" },
+      { icon: "▤", name: "JAVASCRIPT", ext: ".JS",  type: { es: "LENGUAJE",  en: "LANGUAGE"  }, meta: "4" },
+      { icon: "▦", name: "MATERIAL-UI", ext: ".MUI", type: { es: "LIBRERIA", en: "LIBRARY"   }, meta: "2" },
+      { icon: "◈", name: "HTML",       ext: ".HTM", type: { es: "MARCADO",   en: "MARKUP"    }, meta: "5" },
+      { icon: "◈", name: "CSS",        ext: ".CSS", type: { es: "ESTILO",    en: "STYLING"   }, meta: "5" },
+    ],
+  },
+  {
+    id: "backend",
+    pathLabel: "C:\\STACK\\BACKEND",
+    title: { es: "BACKEND", en: "BACKEND" },
+    metaHeader: { es: "AÑOS", en: "YEARS" },
+    iconColor: "purple",
+    entries: [
+      { icon: "▦", name: "NODE",   ext: ".JS",  type: { es: "RUNTIME",  en: "RUNTIME"  }, meta: "2" },
+      { icon: "▦", name: "EXPRESS", ext: ".JS", type: { es: "FRAMEWORK", en: "FRAMEWORK" }, meta: "1" },
+      { icon: "◉", name: "MYSQL",  ext: ".SQL", type: { es: "BASE",     en: "DATABASE" }, meta: "3" },
+      { icon: "◉", name: "REST",   ext: ".API", type: { es: "PROTOCOLO", en: "PROTOCOL" }, meta: "3" },
+    ],
+  },
+  {
+    id: "tools",
+    pathLabel: "C:\\STACK\\TOOLS",
+    title: { es: "HERRAMIENTAS", en: "TOOLS" },
+    metaHeader: { es: "USO", en: "USE" },
+    iconColor: "yellow",
+    entries: [
+      { icon: "◈", name: "VSCODE",  ext: ".EXE", type: { es: "EDITOR", en: "EDITOR" }, meta: { es: "DIARIO",   en: "DAILY"   } },
+      { icon: "◈", name: "GIT",     ext: ".EXE", type: { es: "VCS",    en: "VCS"    }, meta: { es: "DIARIO",   en: "DAILY"   } },
+      { icon: "◈", name: "GITHUB",  ext: ".COM", type: { es: "REMOTO", en: "REMOTE" }, meta: { es: "DIARIO",   en: "DAILY"   } },
+      { icon: "◈", name: "FIGMA",   ext: ".APP", type: { es: "DISENO", en: "DESIGN" }, meta: { es: "SEMANAL",  en: "WEEK"    } },
+      { icon: "◈", name: "VERCEL",  ext: ".COM", type: { es: "DEPLOY", en: "DEPLOY" }, meta: { es: "SEMANAL",  en: "WEEK"    } },
+      { icon: "◈", name: "POSTMAN", ext: ".APP", type: { es: "API",    en: "API"    }, meta: { es: "MENSUAL",  en: "MONTH"   } },
+    ],
+  },
+  {
+    id: "soft",
+    pathLabel: "C:\\STACK\\SOFT",
+    title: { es: "HABILIDADES BLANDAS", en: "SOFT SKILLS" },
+    metaHeader: { es: "NIVEL", en: "LEVEL" },
+    iconColor: "pink-soft",
+    entries: [
+      { icon: "★", name: "TEAMWORK",      ext: ".HUM", type: { es: "EQUIPO",    en: "TEAM"     }, meta: "★★★★★" },
+      { icon: "★", name: "COMUNICACION",  ext: ".HUM", type: { es: "PERSONAL",  en: "PERSONAL" }, meta: "★★★★☆" },
+      { icon: "★", name: "ADAPTABILIDAD", ext: ".HUM", type: { es: "PERSONAL",  en: "PERSONAL" }, meta: "★★★★★" },
+      { icon: "★", name: "PROBLEM-SOLVE", ext: ".HUM", type: { es: "ANALISIS",  en: "ANALYSIS" }, meta: "★★★★☆" },
+      { icon: "★", name: "CURIOSIDAD",    ext: ".HUM", type: { es: "MINDSET",   en: "MINDSET"  }, meta: "★★★★★" },
+    ],
+  },
+  {
+    id: "other-langs",
+    pathLabel: "C:\\STACK\\LANGS",
+    title: { es: "OTROS LENGUAJES", en: "OTHER LANGUAGES" },
+    metaHeader: { es: "AÑOS", en: "YEARS" },
+    iconColor: "orange",
+    entries: [
+      { icon: "▦", name: "PYTHON", ext: ".PY",  type: { es: "LENGUAJE", en: "LANGUAGE" }, meta: "1" },
+      { icon: "▦", name: "JAVA",   ext: ".JAR", type: { es: "LENGUAJE", en: "LANGUAGE" }, meta: "1" },
+      { icon: "▦", name: "C",      ext: ".C",   type: { es: "LENGUAJE", en: "LANGUAGE" }, meta: "1" },
+      { icon: "▦", name: "PHP",    ext: ".PHP", type: { es: "LENGUAJE", en: "LANGUAGE" }, meta: "1" },
+    ],
+  },
+  {
+    id: "idiomas",
+    pathLabel: "C:\\STACK\\I18N",
+    title: { es: "IDIOMAS", en: "LANGUAGES" },
+    metaHeader: { es: "NIVEL", en: "LEVEL" },
+    iconColor: "yellow",
+    entries: [
+      { icon: "◉", name: "ESPANOL", ext: ".LNG", type: { es: "HABLADO", en: "SPOKEN" }, meta: { es: "NATIVO", en: "NATIVE" } },
+      { icon: "◉", name: "INGLES",  ext: ".LNG", type: { es: "HABLADO", en: "SPOKEN" }, meta: "B1" },
+    ],
+  },
 ];

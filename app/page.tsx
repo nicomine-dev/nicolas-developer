@@ -25,7 +25,7 @@ export default function HomePage() {
       <About c={c} />
       <Experience c={c} lang={LANG} />
       <Projects c={c} lang={LANG} />
-      <Skills c={c} />
+      <Skills c={c} lang={LANG} />
       <Contact c={c} />
       <Footer c={c} />
     </>
