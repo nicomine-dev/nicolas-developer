@@ -1515,6 +1515,13 @@ section.vw-section {
   flex-basis: 17px;
 }
 @media (max-width: 720px) {
+  .contact-mail {
+    max-width: 360px;
+    font-size: clamp(15px, 5.2vw, 26px);
+    letter-spacing: 0.06em;
+    padding: 12px 8px;
+  }
+  .terminal { max-width: 360px; }
   .contact-socials { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; max-width: 360px; }
   .contact-socials a { font-size: 15px; padding: 10px 12px; gap: 14px; }
   .contact-socials .social-icon { width: 18px; height: 18px; flex-basis: 18px; }
