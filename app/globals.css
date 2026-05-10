@@ -1454,7 +1454,10 @@ section.vw-section {
   margin-bottom: 32px;
 }
 .contact-mail {
-  display: inline-block;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto 28px;
   font-family: var(--font-pixel);
   font-size: clamp(28px, 4vw, 48px);
   letter-spacing: 0.1em;
@@ -1463,8 +1466,8 @@ section.vw-section {
   padding: 14px 28px;
   border: 2px solid var(--yellow);
   text-shadow: 0 0 12px var(--yellow);
-  margin-bottom: 28px;
   transition: all 200ms;
+  text-align: center;
 }
 .contact-mail:hover {
   background: var(--yellow);
@@ -1533,7 +1536,7 @@ section.vw-section {
   background: rgba(0, 0, 0, 0.55);
   border: 1px solid var(--cyan);
   padding: 14px 18px;
-  max-width: 520px;
+  max-width: 720px;
   margin-left: auto;
   margin-right: auto;
 }
