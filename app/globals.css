@@ -306,6 +306,31 @@ body.cursor-hover .cursor-cat {
 .top-bar .stat .blink {
   animation: blink 1s steps(2) infinite;
 }
+.top-bar .lang-toggle {
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: 0.1em;
+  color: var(--cyan-soft);
+  background: rgba(10, 0, 20, 0.35);
+  border: 1px solid rgba(255, 45, 149, 0.35);
+  padding: 2px 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: border-color 120ms, box-shadow 120ms;
+}
+.top-bar .lang-toggle:hover {
+  border-color: var(--pink-soft);
+  box-shadow: 0 0 8px rgba(255, 45, 149, 0.45);
+}
+.top-bar .lang-toggle .on {
+  color: var(--pink-soft);
+  text-shadow: 1px 1px 0 var(--cyan);
+}
+.top-bar .lang-toggle .sep {
+  opacity: 0.5;
+}
 @keyframes blink {
   50% { opacity: 0; }
 }

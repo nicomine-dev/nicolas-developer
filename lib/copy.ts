@@ -66,7 +66,7 @@ export const COPY: Record<Lang, CopyBlock> = {
     expTitle: "TIMELINE",
     projTag: "// PROYECTOS",
     projTitle: "OBRAS",
-    skillsTag: "// SKILLS",
+    skillsTag: "// HABILIDADES",
     skillsTitle: "STACK.SYS",
     contactTag: "// CONTACTO",
     contactLine: "HABLEMOS",

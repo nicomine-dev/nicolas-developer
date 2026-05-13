@@ -26,7 +26,7 @@ export type SkillIconColor = "cyan-soft" | "purple" | "yellow" | "pink-soft" | "
 
 export type SkillEntry = {
   icon: string;
-  name: string;
+  name: string | Record<Lang, string>;
   ext: string;
   type: Record<Lang, string>;
   meta: string | Record<Lang, string>;
@@ -219,11 +219,11 @@ export const SKILL_DIRS: SkillDir[] = [
     metaHeader: { es: "NIVEL", en: "LEVEL" },
     iconColor: "pink-soft",
     entries: [
-      { icon: "★", name: "TEAMWORK",      ext: ".HUM", type: { es: "EQUIPO",    en: "TEAM"     }, meta: "★★★★★" },
-      { icon: "★", name: "COMUNICACION",  ext: ".HUM", type: { es: "PERSONAL",  en: "PERSONAL" }, meta: "★★★★☆" },
-      { icon: "★", name: "ADAPTABILIDAD", ext: ".HUM", type: { es: "PERSONAL",  en: "PERSONAL" }, meta: "★★★★★" },
-      { icon: "★", name: "PROBLEM-SOLVE", ext: ".HUM", type: { es: "ANALISIS",  en: "ANALYSIS" }, meta: "★★★★☆" },
-      { icon: "★", name: "CURIOSIDAD",    ext: ".HUM", type: { es: "MINDSET",   en: "MINDSET"  }, meta: "★★★★★" },
+      { icon: "★", name: { es: "TRABAJO EN EQUIPO", en: "TEAMWORK" },      ext: ".HUM", type: { es: "EQUIPO",    en: "TEAM"     }, meta: "★★★★★" },
+      { icon: "★", name: { es: "COMUNICACION",      en: "COMMUNICATION" }, ext: ".HUM", type: { es: "PERSONAL",  en: "PERSONAL" }, meta: "★★★★☆" },
+      { icon: "★", name: { es: "ADAPTABILIDAD",     en: "ADAPTABILITY" },  ext: ".HUM", type: { es: "PERSONAL",  en: "PERSONAL" }, meta: "★★★★★" },
+      { icon: "★", name: { es: "RESOLUCION",        en: "PROBLEM-SOLVE" }, ext: ".HUM", type: { es: "ANALISIS",  en: "ANALYSIS" }, meta: "★★★★☆" },
+      { icon: "★", name: { es: "CURIOSIDAD",        en: "CURIOSITY" },     ext: ".HUM", type: { es: "MINDSET",   en: "MINDSET"  }, meta: "★★★★★" },
     ],
   },
   {
@@ -246,8 +246,8 @@ export const SKILL_DIRS: SkillDir[] = [
     metaHeader: { es: "NIVEL", en: "LEVEL" },
     iconColor: "yellow",
     entries: [
-      { icon: "◉", name: "ESPANOL", ext: ".LNG", type: { es: "HABLADO", en: "SPOKEN" }, meta: { es: "NATIVO", en: "NATIVE" } },
-      { icon: "◉", name: "INGLES",  ext: ".LNG", type: { es: "HABLADO", en: "SPOKEN" }, meta: "B2" },
+      { icon: "◉", name: { es: "ESPANOL", en: "SPANISH" }, ext: ".LNG", type: { es: "HABLADO", en: "SPOKEN" }, meta: { es: "NATIVO", en: "NATIVE" } },
+      { icon: "◉", name: { es: "INGLES",  en: "ENGLISH" }, ext: ".LNG", type: { es: "HABLADO", en: "SPOKEN" }, meta: "B2" },
     ],
   },
 ];

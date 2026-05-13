@@ -44,19 +44,22 @@ function DirWindow({ dir, lang }: { dir: SkillDir; lang: Lang }) {
         </div>
 
         <ul className="dir-list" role="rowgroup">
-          {dir.entries.map((entry: SkillEntry) => (
-            <li key={`${entry.name}${entry.ext}`} className="dir-row" role="row">
+          {dir.entries.map((entry: SkillEntry) => {
+            const name = resolve(entry.name, lang);
+            return (
+            <li key={`${name}${entry.ext}`} className="dir-row" role="row">
               <span className="dir-cols dir-cells">
                 <span className="row-name" role="cell">
                   <span className="row-icon" aria-hidden="true">{entry.icon}</span>
-                  <span className="row-uppercase">{entry.name}</span>
+                  <span className="row-uppercase">{name}</span>
                   <em className="row-ext">{entry.ext}</em>
                 </span>
                 <span className="row-type" role="cell">{resolve(entry.type, lang)}</span>
                 <span className="row-meta" role="cell">{resolve(entry.meta, lang)}</span>
               </span>
             </li>
-          ))}
+            );
+          })}
         </ul>
 
         <footer className="dir-status">
