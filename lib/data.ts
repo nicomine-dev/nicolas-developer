@@ -95,8 +95,21 @@ export const EXPERIENCE: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
-    name: "ECO-MOVES",
+    name: "FORMATIT",
     kind: "kind-grid",
+    label: "RESUME.AI",
+    href: "https://format-it-pied.vercel.app",
+    image: "/images/screenshots/formatit.png",
+    desc: {
+      es: "Editor de CV en vivo con IA integrada. Armas tu resume y el modelo lo afina por vos.",
+      en: "Live CV editor with built-in AI. You shape your resume and the model fine-tunes it for you.",
+    },
+    tags: ["NEXT.JS", "AI", "TAILWIND"],
+    link: { es: "PROBAR →", en: "TRY →" },
+  },
+  {
+    name: "ECO-MOVES",
+    kind: "kind-stripes",
     label: "MONEY.EXE",
     href: "https://ecomoves.vercel.app",
     image: "/images/screenshots/eco-moves.png",
@@ -109,7 +122,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "PIXEL-PLAYER",
-    kind: "kind-stripes",
+    kind: "kind-checker",
     label: "PLAYER.APP",
     href: "https://pixel-player-nm.vercel.app",
     image: "/images/screenshots/audio-player.png",
@@ -122,7 +135,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "POKEDEX",
-    kind: "kind-checker",
+    kind: "kind-noise",
     label: "POKE.BIN",
     href: "https://pokedex-nm.vercel.app",
     image: "/images/screenshots/pokedex.png",
@@ -135,7 +148,7 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "BEECOMMERCE",
-    kind: "kind-noise",
+    kind: "kind-grid",
     label: "STORE.HTM",
     href: "https://beecommerce-three.vercel.app/login",
     image: "/images/screenshots/beecommerce.png",
