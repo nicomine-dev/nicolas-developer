@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <clipPath id="round"><rect width="512" height="512" rx="112"/></clipPath>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#1a1030"/>
+  <g clip-path="url(#round)">
+    <!-- document -->
+    <rect x="140" y="110" width="200" height="260" rx="14" fill="none" stroke="#c4b5fd" stroke-width="10"/>
+    <line x1="172" y1="185" x2="308" y2="185" stroke="#c4b5fd" stroke-width="8" stroke-linecap="round"/>
+    <line x1="172" y1="220" x2="308" y2="220" stroke="#c4b5fd" stroke-width="8" stroke-linecap="round"/>
+    <line x1="172" y1="255" x2="270" y2="255" stroke="#c4b5fd" stroke-width="8" stroke-linecap="round"/>
+    <!-- fold corner -->
+    <polyline points="300,110 300,160 350,160" fill="none" stroke="#c4b5fd" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- AI sparkle -->
+    <g transform="translate(310,310)">
+      <polygon points="0,-42 9,-9 42,0 9,9 0,42 -9,9 -42,0 -9,-9" fill="#a78bfa"/>
+      <polygon points="0,-22 5,-5 22,0 5,5 0,22 -5,5 -22,0 -5,-5" fill="#ede9fe"/>
+    </g>
+  </g>
+</svg>

@@ -14,6 +14,7 @@ export type Project = {
   label: string;
   href: string;
   image: string;
+  icon?: string;
   desc: Record<Lang, string>;
   tags: string[];
   link: Record<Lang, string>;
@@ -100,11 +101,12 @@ export const PROJECTS: Project[] = [
     label: "RESUME.AI",
     href: "https://format-it-pied.vercel.app",
     image: "/images/screenshots/formatit.png",
+    icon: "/projects/formatit.svg",
     desc: {
       es: "Editor de CV en vivo con IA integrada. Armas tu resume y el modelo lo afina por vos.",
       en: "Live CV editor with built-in AI. You shape your resume and the model fine-tunes it for you.",
     },
-    tags: ["NEXT.JS", "AI", "TAILWIND"],
+    tags: ["NEXT.JS", "REACT", "TAILWIND", "PDF"],
     link: { es: "PROBAR →", en: "TRY →" },
   },
   {
@@ -113,11 +115,12 @@ export const PROJECTS: Project[] = [
     label: "MONEY.EXE",
     href: "https://ecomoves.vercel.app",
     image: "/images/screenshots/eco-moves.png",
+    icon: "/projects/eco-moves.svg",
     desc: {
       es: "App para llevar registro del dinero. Organiza tus cuentas y muestra resumenes claros.",
       en: "App to track your money. Organizes your accounts and shows clean summaries.",
     },
-    tags: ["REACT"],
+    tags: ["REACT", "VITE", "SUPABASE", "EXPRESS"],
     link: { es: "VER →", en: "VIEW →" },
   },
   {
@@ -126,11 +129,12 @@ export const PROJECTS: Project[] = [
     label: "PLAYER.APP",
     href: "https://pixel-player-nm.vercel.app",
     image: "/images/screenshots/audio-player.png",
+    icon: "/projects/pixel-player.svg",
     desc: {
       es: "Reproductor de canciones con estetica vaporwave y pixelart.",
       en: "Music player with vaporwave + pixel-art aesthetic.",
     },
-    tags: ["REACT", "AUDIO"],
+    tags: ["REACT", "VITE", "AUDIO"],
     link: { es: "ESCUCHAR →", en: "LISTEN →" },
   },
   {
@@ -139,11 +143,12 @@ export const PROJECTS: Project[] = [
     label: "POKE.BIN",
     href: "https://pokedex-nm.vercel.app",
     image: "/images/screenshots/pokedex.png",
+    icon: "/projects/pokedex.svg",
     desc: {
       es: "Pokedex conectada a la PokeAPI. Mi primer trabajo en React.",
       en: "Pokedex hooked to the PokeAPI. My first React build.",
     },
-    tags: ["REACT", "API"],
+    tags: ["REACT", "VITE", "POKEAPI"],
     link: { es: "EXPLORAR →", en: "EXPLORE →" },
   },
   {
@@ -152,11 +157,12 @@ export const PROJECTS: Project[] = [
     label: "STORE.HTM",
     href: "https://beecommerce-three.vercel.app/login",
     image: "/images/screenshots/beecommerce.png",
+    icon: "/projects/beecommerce.svg",
     desc: {
       es: "App para negocios con stock, ventas y metricas. Escaneo de codigos de barra y QR.",
       en: "Business app with stock, sales and metrics. Barcode and QR scanning.",
     },
-    tags: ["REACT", "MUI"],
+    tags: ["REACT", "TS", "MUI", "REDUX", "SUPABASE"],
     link: { es: "ABRIR →", en: "BROWSE →" },
   },
 ];

@@ -1119,9 +1119,36 @@ section.vw-section {
   object-fit: cover;
   z-index: 3;
   filter: saturate(1.1);
+  transition: opacity 380ms ease, transform 380ms ease, filter 380ms ease;
 }
-.proj-screen:hover .proj-shot {
+.proj-screen.has-icon .proj-shot {
+  opacity: 0;
+  transform: scale(1.04);
+}
+.proj:hover .proj-screen.has-icon .proj-shot {
+  opacity: 1;
+  transform: scale(1);
   filter: saturate(1.2) contrast(1.05);
+}
+.proj:hover .proj-screen .proj-shot {
+  filter: saturate(1.2) contrast(1.05);
+}
+.proj-screen .proj-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 120px;
+  height: 120px;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.45));
+  transition: opacity 320ms ease, transform 420ms ease;
+  pointer-events: none;
+}
+.proj:hover .proj-screen.has-icon .proj-icon {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.85);
 }
 .proj-screen .scrn-label {
   position: absolute;

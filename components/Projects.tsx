@@ -19,7 +19,16 @@ export function Projects({ c, lang }: { c: CopyBlock; lang: Lang }) {
             target="_blank"
             rel="noreferrer"
           >
-            <div className={`proj-screen ${p.kind}`}>
+            <div className={`proj-screen ${p.kind}${p.icon ? " has-icon" : ""}`}>
+              {p.icon && (
+                <Image
+                  src={p.icon}
+                  alt={`${p.name} icon`}
+                  width={120}
+                  height={120}
+                  className="proj-icon"
+                />
+              )}
               <Image
                 src={p.image}
                 alt={p.name}
